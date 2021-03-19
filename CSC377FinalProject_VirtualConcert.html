@@ -1,36 +1,99 @@
 <!doctype html>
 <html lang="en">
+<style>
+    .header
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        text-align: center;
+    }
+</style>
+<style>
+    a:link
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        color: rgb(175, 21, 72);
+    }
+    a:visited
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        color: rgb(219, 14, 219);   
+    }
+</style>
+<style>
+    .kitty-title
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #30212f;
+        font-size: 26px;
+    }
+
+    .kitty-subTitle
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #68284b;
+        font-size: 20px;
+        font-weight: lighter;
+    } 
+
+    .kitty-text
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#543244;
+        font-size: 14px;
+    }
+
+    .kitty-image
+    { 
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .kitty-hr
+    {
+        border-radius: 5px;
+        border-top-color: black;
+        border-bottom-color: salmon;
+    }
+
+</style>
+
+<style>
+    .container
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 5%;
+        background-color:#bfa4b3;
+    }
+</style>
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/shards.min.css">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Virtual Concert</title>
 </head>
+
 <body>
-<div class="headbar">
-    <h1>Virtual Concert</h1>
+<div class="header">
+    <h1 style="font-size: 100px;">Virtual Concert</h1>
     <h4>Kitty Zhuang - CSC377 - Winter2021</h4>
-    <small><a href="https://github.com/Kittysain/CSC377FINAL_VirtualConcert">GitHub Link</a></small>
+    <small style="color: palevioletred;"><a href="https://github.com/Kittysain/CSC377FINAL_VirtualConcert">GitHub Link</a></small>
 </div>
-<div class="container">
-
-
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <img class="card-img" src="FinalWebImage/Image1.png" alt="" width="100%"/>
-            </div>
+<div class="row">
+    <div class="col-12">
+        <div class="text">
+            <img class="kitty-image" src="FinalWebImage/Image1.png" alt="" width="50%"/>
         </div>
     </div>
-
+</div>
+<div class="container">
     <div class="row">
         <div class="col-12">
-            <h3 class="card-title">Description</h3>
-            <p class="card-text">
+            <h3 class="kitty-title">Description</h3>
+            <p class="kitty-text">
                 Inspired by live comments and The Wave XR virtual concerts. 
                 A combination of two product which allows people to share live thoughts, express appreciation with objects and visual effects.
                 In this experience, you will be watching APOKI dancing and singing to her song “Get It Out”. You can look and move around in the space. 
@@ -40,128 +103,179 @@
 			</p>
         </div>
     </div>
-    <hr/>
+    <hr class="kitty-hr">
 
     <div class="row">
         <div class="col-12">
-            <h3 class="card-title">About the Video</h3>
-            <p class="card-text">
-                <size=120%><color=#E35F92>APOKI - GET IT OUT</color></size>
-                Who is APOKI?
-                <size=80%><b>    Virtual Artist, Singer, Dancer.</b>
+            <h3 class="kitty-title">Items</h3>
+            <p class="kitty-text">
+                There are 3 interactable items in this project.             
+			</p>
+            <img class="kitty-image" src="FinalWebImage/ItemImages1.png" alt="3 interactable items" width="50%"/>
+            <h4 class="kitty-subTitle">Heart</h4>
+            <img class="kitty-image" src="FinalWebImage/ItemImages2.png" alt="Heart item" width="50%"/>
+            <p class="kitty-text">
+                The Heart Item has 3 different particle systems and 4 different materials attached to it. You can press the right primary 
+                button to switch the particle systems and the right secondary button to switch the colors.<br>
+                The default particle system is a simple velocity tracked. If you move the object. Then there will be smaller hearts comming out. <br></p>         
+                <small style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Heart Particle System 1</small>
+                <img class="kitty-image" src="FinalWebImage/ItemImages5.png" alt="Heart Particle System 1" width="50%"/>
+            <p class="kitty-text">
+                The second is a bigger particle system to make hearts to float around you.<br></p>
+                <small style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Heart Particle System 2</small>
+                <img class="kitty-image" src="FinalWebImage/ItemImages4.png" alt="Heart Particle System 2" width="50%"/>
+                <p class="kitty-text">
+                The third is a shootable object, which you can shoot a particle system out.</p>
+			</p>
+            <h4 class="kitty-subTitle">Flowers</h4>
+            <p class="kitty-text">
+                There are 5 flowers modes you can choose. You can also press the trigger to shoot the flower as well.
+            </p>
+            <img class="kitty-image" src="FinalWebImage/ItemImages3.png" alt="" width="50%"/>
+            <h4 class="kitty-subTitle">Light stick</h4>
+            <p class="kitty-text">
+                The light stick has 1 particle system which leaves trails when it's moving, and 3 colors to choose from.
+            </p>
+            <img class="kitty-image" src="FinalWebImage/ItemImages6.png" alt="" width="50%"/>
+
+
+        </div>
+    </div>
+    <hr class="kitty-hr">
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="kitty-title">About the Video</h3>
+            <p class="kitty-text">
+                APOKI - GET IT OUT
+                Who is APOKI?<br>
+                <b>    Virtual Artist, Singer, Dancer.</b><br>
                 Apoki is Korea's most renowned virtual artist. With her unique concept, music and performances that only she can pull off, 
                 APOKI is establishing herself as an unrivaled iconic figure. She currently has roughly 1.7 million fans on 
-                <color=#E35F92><b>YOUTUBE</color></b>,<b><color=#E35F92> TIKTOK</color></b> and <color=#E35F92><b>INSTAGRAM</color></b>, 
-                and is constantly amazing them with her spectacular musical talents.</size>
-                <size=60%>Link : https://www.youtube.com/watch?v=YKT4BiOReTc</size>
+                <b>YOUTUBE</b>,<b> TIKTOK</b> and <b>INSTAGRAM</b>, 
+                and is constantly amazing them with her spectacular musical talents.<br>
+                <a href="https://www.youtube.com/watch?v=YKT4BiOReTc">APOKI-Get It Out</a>
 			</p>
         </div>
     </div>
-    <hr/>
+    <hr class="kitty-hr">
 
     <div class="row">
         <div class="col-12">
-            <h3 class="card-title">About Me - Kitty Zhuang</h3>
-            <p class="card-text">
-                <size=120%><color=#E35F92>APOKI - GET IT OUT</color></size>
-                Hello, Thank you very much for playing. I appreciate your time. For real.
-                I am currently a 4th year CS & LAES student, also minor in CIA. I love 
-                <color=#E35F92>cumputer graphics </color>and hope to make something everyone would love. 
-                I am also very into dancing. Hence a great virtual dancer video for this project.
-                This project is how I envisioned <color=#E35F92>virtual concert</color>. 
-                Player can interact by giving out flowers. Have special effects in such as hearts 
-                floating around, and shoot out hearts to the artists! Pretty exciting to me. 
-                I was inspired by live comments and the virtual concerts hosted by <color=#E35F92>THE WAVE XR</color>. 
-                Again, thank you for playing! I hope you enjoyed the experience.
-			</p>
-        </div>
-    </div>
-    <hr/>
-
-    <div class="row">
-        <div class="col-12">
-            <h3 class="card-title">Special Thanks</h3>
-            <p class="card-text">
+            <h3 class="kitty-title">Special Thanks</h3>
+            <p class="kitty-text">
                   Christian Eckhardt - CSC377 Intro to MR
-                <size=60%>No link available. Please take CSC 377 if you are interested. Thank you Christian.</size>
+                No link available. Please take CSC 377 if you are interested. Thank you Christian.
                   Valem - Introduction to VR series
-                <size=60%>https://www.youtube.com/channel/UCPJlesN59MzHPPCp0Lg8sLw</size>
+                <a href="https://www.youtube.com/channel/UCPJlesN59MzHPPCp0Lg8sLw">Youtube - Valem</a>
                   VR with Andrew - Menu System for VR series
-                <size=60%>https://www.youtube.com/watch?v=__iTtJHZg6k</size>
+                <a href="https://www.youtube.com/watch?v=__iTtJHZg6k">Youtube - VR with Andrew</a>
                   GameDevBill - Unirt Shader Graph Intro
-                <size=60%>https://www.youtube.com/watch?v=FLVNfBQgeQc&t=231s</size>
+                <a href="https://www.youtube.com/watch?v=FLVNfBQgeQc&t=231s">Youtube - GameDevBill</a>
+			</p>
+        </div>
+    </div>
+    <hr class="kitty-hr">
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="kitty-title">Game Controls</h3>
+            <p class="kitty-text">
+                To Grab Objects - Grip<br>
+                _When controller point to an interactable object, a line would appear. Press the Grip button to grab it. <br>
+                
+                <br>
+                To Teleport -  Trigger<br>
+                _Lightly Press on Trigger to enable teleporting and see the telepotation target. Press down the Trigger to teleport.<br>
+                
+                <br>
+                To Move Around - Left Joystick<br>
+                _Move the joystick to move without walking in real life.<br>
+                
+                <br>
+                To Turn Camera Horizontaly - Right Joystick<br>
+                _Move the Joystick Left or Right to turn the cAMERA WITHOUT TURNING HEad<br>
+                
+                <br>
+                To Change Object Mode - Right Primary Button<br>
+                _Some Object have various modes, press the right primary button to switch mode.<br>
+                
+                <br>
+                To Change Object Color - Right Secondary Button<br>
+                _Some Object have different colors, press the right secondary button to switch colors.<br>
+
+                <br>
+                <b>To Shoot Flowers - Right Trigger</b><br>
+                _While you are holding the cheering object, press trigger to shoot the item!<br>
             
 			</p>
         </div>
     </div>
-    <hr/>
+    <hr class="kitty-hr">
 
     <div class="row">
         <div class="col-12">
-            <h3 class="card-title">Game Controls</h3>
-            <p class="card-text">
-                To Grab Objects - <color=#E35F92>Grip</color>
-                <size=50%>      When controller point to an interactable object, a line would appear. Press the Grip button to grab it. 
-                </size>
-                To Teleport -  <color=#E35F92>Trigger</color>
-                <size=50%>       Lightly Press on Trigger to enable teleporting and see the telepotation target. Press down the Trigger to teleport.
-                </size>
-                To Move Around - <color=#E35F92>Left Joystick</color>
-                <size=50%>      Move the joystick to move without walking in real life.
-                </size>
-                To Turn Camera Horizontaly - <color=#E35F92>Right Joystick</color>
-                <size=50%>      Move the Joystick Left or Right to turn the cAMERA WITHOUT TURNING HEad
-                </size>
-                To Change Object Mode - <color=#E35F92>Right Primary Button</color>
-                <size=50%>       Some Object have various modes, press the right primary button to switch mode.
-                </size>
-                To Change Object Color - <color=#E35F92>Right Secondary Button</color>
-                <size=50%>       Some Object have different colors, press the right secondary button to switch colors.
-            
-			</p>
-        </div>
-    </div>
-    <hr/>
-
-    <div class="row">
-        <div class="col-12">
-            <h3 class="card-title">Video Demo</h3>
+            <h3 class="kitty-title">Video Demo</h3>
             <video width="100%" controls>
                 <source src="FinalWebImage/Project Demo.mp4" type="video/mp4">
             </video>
         </div>
     </div>
-    <hr/>
+    <hr class="kitty-hr">
   
 
     <div class="row">
         <div class="col-12">
-            <h3 class="card-title">Technical Implementation</h3>
-            <h4 class="card-title">Original Implementation</h4>
-            <p class="card-text">
+            <h3 class="kitty-title">Technical Implementation</h3>
+            <h4 class="kitty-subTitle">Original Implementation</h4>
+            <p class="kitty-text">
                 Mode Switcher -- A script that allows objects to switch among multiple materials and modes when buttons are pressed. 
                     Modes are considered as gameobjects. For example, the heart item can switch among 3 type of particle systems. 
                     All the materials and modes are kept as lists, so they can be easily modified.
                 Object Hold and Return -- A script that allows the cheering item to return in a nice way to where it is supposed to go.
 			</p>
-            <h4 class="card-title">Modified Implementation of Other Sources</h4>
-            <p class="card-text">
+            <h4 class="kitty-subTitle">Modified Implementation of Other Sources</h4>
+            <p class="kitty-text">
                 UI Menu system, galaxy shader and material, VR move around, Camera turning, trailing particle system, etc.
             </p>
-            <h4 class="card-title">Tools and Assets</h4>
-            <p class="card-text">
+            <h4 class="kitty-subTitle">Tools and Assets</h4>
+            <p class="kitty-text">
                 XR interaction toolkit, Assets from Unity Stores (Not Specified Here), Youtube Videos.
             </p>
         </div>
     </div>
-    <hr/>
+    <hr class="kitty-hr">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-            crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/shards.min.js"></script>
+    <div class="row">
+        <div class="col-12">
+            <h3 class="kitty-title">About Me - Kitty Zhuang</h3>
+            <p class="kitty-text">
+                Hello, Thank you very much for playing. I appreciate your time. For real.
+                I am currently a 4th year CS & LAES student, also minor in CIA. I love 
+                cumputer graphics and hope to make something everyone would love. 
+                I am also very into dancing. Hence a great virtual dancer video for this project.
+                This project is how I envisioned virtual concert. 
+                Player can interact by giving out flowers. Have special effects in such as hearts 
+                floating around, and shoot out hearts to the artists! Pretty exciting to me. 
+                I was inspired by live comments and the virtual concerts hosted by THE WAVE XR. 
+                Again, thank you for playing! I hope you enjoyed the experience.
+			</p>
+        </div>
+    </div>
+    <hr class="kitty-hr">
+
+    <div class="row">
+        <div class="col-12">
+                <h1 class = "kitty-title">Download</h1>
+                <p class = "kitty-text"> 
+                    If you have any questions, you can reach me by emails<br>
+                    This unity project is build based on Vive Cosmos Headset. I have not tested the project on other headsets.
+                </p>
+                <small style="color: palevioletred;"><a href="https://github.com/Kittysain/CSC377FINAL_VirtualConcert">GitHub Link</a></small>
+        </div>
+    </div>
+
+    <hr class="kitty-hr">
 </body>
+
 </html>
